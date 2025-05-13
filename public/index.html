@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth ">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="thema-color" content="#0070f3">
+    <meta name="theme-color" content="#0070f3">
     <meta name="description" content="Frontend Developer Portfolio - PetersonCarneiro"> 
     <link rel="stylesheet" href="build/tailwind.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -12,8 +12,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <title>Portfolio - Peterson Prestes Carneiro</title>
 </head>
-<body>
-    <H1 class="text-2lx">teste</H1>
-    
-</body>
+<body class="font-sans text-gray-900 dark:text-white bg-white dark:bg-dark-background transition-colors duration-300">
+    <div class="fixed inset-0 -z-10 opacity-0 dark:opacity-100 transition-opacity duration-500 pointer-events-none">
+      <div class="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10"></div>
+    </div>
+  
+    <header class="fixed w-full top-0 z-50 bg-white/95 dark:bg-dark-background/95 backdrop-blur-sm shadow-sm transition-all duration-300">
+      <div class="container mx-auto px-4">
+        <nav class="flex justify-between items-center py-4">
+          <div class="flex items-center">
+            <span class="text-xl font-extrabold">Peterson Carneiro</span>
+            <span class="text-primary text-2xl ml-1">.</span>
+          </div>
+          <ul class="hidden md:flex space-x-8">
+            <li><a href="#features" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Showcase</a></li>
+            <li><a href="#about" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">About</a></li>
+            <li><a href="#skills" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Skills</a></li>
+            <li><a href="#projects" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Projects</a></li>
+            <li><a href="#contact" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Contact</a></li>
+          </ul>
+          <div class="flex items-center space-x-4">
+            <button id="themeToggle">
+              <i class="fa-solid fa-moon text-gray-600 dark:text-gray-400"></i>
+            </button>
+            <button class="md:hidden p-2" id="menuToggle">
+              <div class="w-6 h-5 flex flex-col justify-between">
+                <span class="w-full h-0.5 bg-gray-600 dark:bg-gray-400 transition-all"></span>
+                <span class="w-full h-0.5 bg-gray-600 dark:bg-gray-400 transition-all"></span>
+                <span class="w-full h-0.5 bg-gray-600 dark:bg-gray-400 transition-all"></span>
+              </div>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </body>
 </html>
