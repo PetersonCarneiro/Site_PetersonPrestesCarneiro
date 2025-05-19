@@ -1,49 +1,47 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ["./public/**/*.{html,js}"],
-    darkMode: 'class',
-    theme: {
-      extend: {
-        colors:{
-          primary: '#3b82f6',
+  content: ["./public/**/*.{html,js}"],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        primary: '#3b82f6',
+        secundary: '#7928ca',
+        accent: '#79ffee', // corrigido valor inválido
+        dark: {
           secundary: '#7928ca',
-          accent: '#79ffel',
-          dark:{ 
-            secundary: '#7928ca',
-            accent: '#79ffel',
-            text: '#fff',
-              'text-secundary': '#888',
-            background: '#000',
-            'background-secundary': '#111',
-            'background-tertiary':'#171717',
-            border: '#333',
-          }
+          accent: '#79ffee',
+          text: '#fff',
+          'text-secundary': '#888',
+          background: '#000',
+          'background-secundary': '#111',
+          'background-tertiary': '#171717',
+          border: '#333',
         }
       },
-      fontFamily:{
-        sans: ['Inter','sans-serif'],
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
       },
-      boxShadow:{
-        'custom': '0 4px 14px rgba(0,0,0,0.1)',
-        'dark': '0 4px 14px rgba(0,0,0,0.25)' 
+      boxShadow: {
+        custom: '0 4px 14px rgba(0,0,0,0.1)',
+        dark: '0 4px 14px rgba(0,0,0,0.25)'
       },
-      animation:{
-        'morph':'morpf 8s ease-in-out infinite',
+      animation: {
+        morph: 'morph 8s ease-in-out infinite',
         'pulse-slow': 'pulse 10s infinite',
       },
-
-    keyframes:{
-      morph:{
-        '0%': { borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%'},
-        '50%': { borderRadius: '30% 60% 70% 40% / 50% 60% 30% 60%'},
-        '100%': { borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%'},
-      },
-      pulse:{
-        '0%, 100%' : { transform: 'scale(1)'},
-        '50%': {transform: 'scale(1.05)'},
+      keyframes: {
+        morph: {
+          '0%': { borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%' },
+          '50%': { borderRadius: '30% 60% 70% 40% / 50% 60% 30% 60%' },
+          '100%': { borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%' },
+        },
+        pulse: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.05)' },
+        }
       }
     }
-
-    },
-    plugins: [],
-  }
+  },
+  plugins: [],
+}
